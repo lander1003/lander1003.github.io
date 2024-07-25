@@ -33,28 +33,6 @@
   <meta property="og:locale" content="en-us" />
   <meta property="og:updated_time" content="2021-12-10T00:00:00&#43;00:00" />
   <title>lander</title>
-  <style>
-    /* 添加自定义样式 */
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
-    /* 增加页面宽度 */
-    .container {
-      max-width: none;
-      padding: 0 20px;
-    }
-    /* 调整个人简介区域的布局 */
-    #profile {
-      text-align: center;
-      margin: 20px 0;
-    }
-    #profile img.avatar {
-      width: 150px; /* 调整头像大小 */
-      height: 150px;
-      margin: 0 auto;
-    }
-    /* 其他样式根据需要调整 */
-  </style>
 </head>
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper">
@@ -139,99 +117,109 @@
     </nav>
   </div>
 
-
   <div class="page-body">
     <span class="js-widget-page d-none"></span>
-
-    <!-- 个人简介部分 -->
-    <section id="about" class="home-section wg-about">
-      <div class="home-section-bg"></div>
+    <section id="about" class="home-section wg-about  "  >
+      <div class="home-section-bg " ></div>
       <div class="container">
-        <div id="profile">
-          <img class="avatar avatar-circle" src="/authors/admin/771630147508_.pic_hd.jpg" alt="Lander">
-          <div class="portrait-title">
-            <h2>江良言</h2>
-            <h3>北京邮电大学人工智能学院硕士在读</h3>
-          </div>
-          <!-- 联系方式和社交媒体链接 -->
-          <ul class="network-icon" aria-hidden="true">
-            <li>
-              <a href="mailto:lander@bupt.edu.cn" aria-label="envelope">
-                <i class="fas fa-envelope big-icon"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/lander1003" target="_blank" rel="noopener" aria-label="github">
-                <i class="fab fa-github big-icon"></i>
-              </a>
-            </ul>
-          </div>
-        </div>
-        <div class="body">
-              <h1>个人简介</h1>
-              <div class="article-style">
-                <p>年龄：25</p>
-                <p>性别：男</p>
-                <p>民族：汉族</p>
-                <p>籍贯：四川凉山</p>
-                <p>政治面貌：中共党员</p>
-                <!-- 教育经历 -->
-                <h2>教育经历</h2>
-                <p><strong>北京邮电大学 人工智能学院</strong><br>信息与通信工程专业 硕士在读<br>研究方向：计算机视觉<br>荣誉奖项：全国“互联网+”大学生创新创业大赛铜奖；研究生学业一等奖学金</p>
-                <p><strong>北京邮电大学 信息与通信工程学院</strong><br>通信工程专业 本科<br>GPA：3.59/4.00<br>主修课程：数学分析、线性代数、Python编程与实践、通信原理、数据科学<br>荣誉奖项：北京市优秀毕业生、三好学生；美国大学生数学建模竞赛H奖；校级优秀学生干部、二等奖学金</p>
-                <!-- 项目经历 -->
-                <h2>项目经历</h2>
-                <!-- 项目1 -->
-                <p><strong>基于任务特定和共享embedding的多任务推荐算法</strong><br>2024.01-2024.03<br>主要工作：实现任务特定和共享embedding范式，消除不同任务间embedding信息表征的干扰；完成多专家网络融合的门控网络开发，在PLE模型应用上述变更，在TikTok多任务数据集上获得了3%的平均AUC收益。</p>
-                <!-- 项目2 -->
-                <p><strong>基于脉冲相机的高质量场景重构</strong><br>2023.09-至今<br>主要创新：设计SwinSF模型，针对脉冲数据的特性设计注意力机制，显著提升动态场景的解析精度和效率；开发脉冲相机模拟器，生成高质量测试数据集，SwinSF模型在动态场景重建数据集上实现了39.34的PSNR值，达到业界领先水平。</p>
-                <!-- 实习经历 -->
-                <h2>实习经历</h2>
-                <!-- 实习1 -->
-                <p><strong>腾讯科技（北京）有限公司</strong><br>算法实习生<br>2024.06-至今<br>实习目标：负责腾讯视频长视频搜索排序环节效果优化，以提升腾讯视频搜索的用户体验。<br>工作内容：基于gradnorm方法对基线模型多目标进行动态调权，离线获得3%的主要目标AUC收益；基于查询量对query分级，设计个性化模型，离线获得4%的AUC收益，尾部query的AUC明显提升；线上AB测试获取3.18%人均观看时长提升，7.28%曝光有点率提升，模型推全。</p>
-                <!-- 实习2 -->
-                <p><strong>小米科技有限责任公司</strong><br>算法实习生<br>2024.03-2024.05<br>实习目标：设计和优化米家智能化场景推荐算法，协助米家智能场景推荐系统的业务场景落地。<br>工作内容：负责基于时间衰减算法的用户行为预测算法设计，实现了0.94的行为命中率；负责基于多模型融合的用户年龄性别预测算法设计，初步完成了米家用户画像的构建。</p>
-                <!-- 实习3 -->
-                <p><strong>牵手未来科技有限公司</strong><br>算法实习生<br>2023.10-2024.02<br>实习目标：负责社交场景下的图像信息挖掘，以提高个性化推荐系统的精准度和用户体验。<br>工作内容：分析了用户在社交场景中的图像内容偏好，为项目方向提供数据支持；设计实施用户社交图像特征提取方案，包括基于minigpt4图像理解大模型的用户头像特征提取；设计基于DSSM的图像特征降维方法，离线获得7%的GAUC收益，上线获取8.3%的配对率收益。</p>
-                <!-- 个人技能 -->
-                <h2>个人技能</h2>
-                <p>语言掌握：英语 CET-6</p>
-                <p>软件使用：Pr、剪映；Logic Pro；Office办公软件</p>
-                <p>编程语言：精通Python语言、熟悉GO语言</p>
-                <p>其他擅长：图片拍摄、视频剪辑、音乐编曲、吉他演奏</p>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div id="profile">
+              <img class="avatar avatar-circle" src="/authors/admin/771630147508_.pic_hd.jpg" alt="Lander">
+              <div class="portrait-title">
+                <h2>江良言 ｜ Lander</h2>
+                <h3>BUPT22级研究生</h3>
+                <h3>
+                  <a href="https://www.bupt.edu.cn/index.htm" target="_blank" rel="noopener">
+                  <span>北京邮电大学</span>
+                  <span>Beijing University of Posts and Telecommunications</span>
+                  </a>
+                </h3>
               </div>
+              <ul class="network-icon" aria-hidden="true">
+                <li>
+                  <a href="/lander@bupt.edu.cn"  aria-label="envelope">
+                    <i class="fas fa-envelope big-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="None" target="_blank" rel="noopener" aria-label="graduation-cap">
+                    <i class="fas fa-graduation-cap big-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/lander1003" target="_blank" rel="noopener" aria-label="github">
+                    <i class="fab fa-github big-icon"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-      </div>
-    </section>
-    <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6">
-              <div class="footer-content">
-                <h5>友情链接</h5>
-                <ul class="list-unstyled">
-                  <li><a href="https://github.com/lander1003" target="_blank" rel="noopener">My Github</a></li>
-                  <li><a href="https://www.bupt.edu.cn/index.htm" target="_blank" rel="noopener">BUPT</a></li>
+          </div>
+          <div class="col-12 col-lg-8">
+            <h1>个人简介</h1>
+            <div class="article-style">
+              <p>江良言，男，汉族，中共党员，四川凉山人，北京邮电大学人工智能学院信息与通信工程专业，智能感知与计算教研中心研一在读。</p>
+              <p>本科期间曾任北京邮电大学学生会主席团成员，北京邮电大学第二十三届研究生支教团四川分团团长，校团委文体部副部长，信息与通信工程学院大班体育委员等。在任期间，组织策划举办了北京邮电大学“篮俱杯”篮球赛，“校长杯”足球赛，“一二·九”火炬接力比赛，协助举办了“艺馨杯”文艺汇演，“五月鲜花”合唱比赛等大型校园文体活动。本科期间曾获北京市三好学生，北京市优秀毕业生，校级优秀学生干部，校级三好学生，校级文体积极分子，校级二等奖学金等荣誉称号与奖项。多次参与志愿活动，曾作为合唱团成员参与庆祝中国共产党成立一百周年大型情景史诗《伟大征程》演出。本科结束曾前往四川省仪陇县进行为期一年的支教，获先进支教个人奖项。</p>
+              <p>兴趣爱好广泛，如弹吉他，踢球，摄影等等！目前立志成为一名paper多多的程序员！</p>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="section-subheading">研究方向</div>
+                <ul class="ul-interests mb-0">
+                  <li>脉冲相机重构</li>
+                  <li>搜索推荐算法</li>
+                </ul>
+              </div>
+              <div class="col-md-7">
+                <div class ="section-subheading">联系方式</div>
+                <ul class="ul-interests mb-0">
+                  <li>Email: lander@bupt.edu.cn</li>
+                  <li>Address: 北京市海淀区西土城路10号 北京邮电大学西土城校区</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="footer-copyright">
-                <p>© 2022 Lander. All rights reserved.</p>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="footer-content">
+            <h5>关于本站</h5>
+            <p>本站基于开源项目Hugo和Wowchemy搭建，主题为Wowchemy的Starter-Academic，托管于GitHub Pages。</p>
+            <p>本站所有内容采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议，转载请注明出处。</p>
           </div>
         </div>
-      </footer>
-    
-      <script src="/js/wowchemy.min.9a8c0a4b2a3d8b7f2c8d4e7c5b0ca767.js"></script>
-      <script src="/js/search.min.3d9f1af2f4d0a4f07a9880a91a573a5e.js"></script>
-      <script src="/js/main.min.7c6a8c42a3d8a0d5e2c6e7c5b0ca767.js"></script>
-      <script src="/js/academic.min.9a8c0a4b2a3d8b7f2c8d4e7c5b0ca767.js"></script>
-      <script src="/js/academic-search.min.3d9f1af2f4d0a4f07a9880a91a573a5e.js"></script>
-    
-    </body>
-    
+        <div class="col-xl-6">
+          <div class="footer-content">
+            <h5>友情链接</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/lander1003" target="_blank" rel="noopener">My Github</a></li>
+              <li><a href="https://www.bupt.edu.cn/index.htm" target="_blank" rel="noopener">BUPT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-copyright">
+            <p>© 2022 Lander. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/wowchemy.min.9a8c0a4b2a3d8b7f2c8d4e7c5b0ca767.js"></script>
+  <script src="/js/search.min.3d9f1af2f4d0a4f07a9880a91a573a5e.js"></script>
+  <script src="/js/main.min.7c6a8c42a3d8a0d5e2c6e7c5b0ca767.js"></script>
+  <script src="/js/academic.min.9a8c0a4b2a3d8b7f2c8d4e7c5b0ca767.js"></script>
+  <script src="/js/academic-search.min.3d9f1af2f4d0a4f07a9880a91a573a5e.js"></script>
+
+</body>
+
 </html>
