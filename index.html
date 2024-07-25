@@ -33,6 +33,28 @@
   <meta property="og:locale" content="en-us" />
   <meta property="og:updated_time" content="2021-12-10T00:00:00&#43;00:00" />
   <title>lander</title>
+  <style>
+    /* 添加自定义样式 */
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    /* 增加页面宽度 */
+    .container {
+      max-width: none;
+      padding: 0 20px;
+    }
+    /* 调整个人简介区域的布局 */
+    #profile {
+      text-align: center;
+      margin: 20px 0;
+    }
+    #profile img.avatar {
+      width: 150px; /* 调整头像大小 */
+      height: 150px;
+      margin: 0 auto;
+    }
+    /* 其他样式根据需要调整 */
+  </style>
 </head>
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper">
@@ -125,35 +147,36 @@
     <section id="about" class="home-section wg-about">
       <div class="home-section-bg"></div>
       <div class="container">
+        <div id="profile">
+          <img class="avatar avatar-circle" src="/authors/admin/771630147508_.pic_hd.jpg" alt="Lander">
+          <div class="portrait-title">
+            <h2>江良言</h2>
+            <h3>北京邮电大学人工智能学院硕士在读</h3>
+          </div>
+          <!-- 联系方式和社交媒体链接 -->
+          <ul class="network-icon" aria-hidden="true">
+            <li>
+              <a href="mailto:lander@bupt.edu.cn" aria-label="envelope">
+                <i class="fas fa-envelope big-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/lander1003" target="_blank" rel="noopener" aria-label="github">
+                <i class="fab fa-github big-icon"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
         <div class="row">
           <div class="col-12 col-lg-4">
-            <div id="profile">
-              <img class="avatar avatar-circle" src="/authors/admin/771630147508_.pic_hd.jpg" alt="Lander">
-              <div class="portrait-title">
-                <h2>江良言</h2>
-                <h3>北京邮电大学人工智能学院硕士在读</h3>
-              </div>
-              <!-- 联系方式和社交媒体链接 -->
-              <ul class="network-icon" aria-hidden="true">
-                <li>
-                  <a href="mailto:lander@bupt.edu.cn" aria-label="envelope">
-                    <i class="fas fa-envelope big-icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/lander1003" target="_blank" rel="noopener" aria-label="github">
-                    <i class="fab fa-github big-icon"></i>
-                  </a>
-                </ul>
-              </div>
-            </div>
             <div class="col-12 col-lg-8">
               <h1>个人简介</h1>
               <div class="article-style">
-                <p>年龄：24</p>
+                <p>年龄：25</p>
                 <p>性别：男</p>
-                <p>联系电话：15110039755</p>
-                <p>电子邮箱：lander@bupt.edu.cn</p>
+                <p>民族：汉族</p>
+                <p>籍贯：四川凉山</p>
+                <p>政治面貌：中共党员</p>
                 <!-- 教育经历 -->
                 <h2>教育经历</h2>
                 <p><strong>北京邮电大学 人工智能学院</strong><br>信息与通信工程专业 硕士在读<br>研究方向：计算机视觉<br>荣誉奖项：全国“互联网+”大学生创新创业大赛铜奖；研究生学业一等奖学金</p>
@@ -187,13 +210,6 @@
     <footer class="site-footer">
         <div class="container">
           <div class="row">
-            <div class="col-xl-6">
-              <div class="footer-content">
-                <h5>关于本站</h5>
-                <p>本站基于开源项目Hugo和Wowchemy搭建，主题为Wowchemy的Starter-Academic，托管于GitHub Pages。</p>
-                <p>本站所有内容采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>许可协议，转载请注明出处。</p>
-              </div>
-            </div>
             <div class="col-xl-6">
               <div class="footer-content">
                 <h5>友情链接</h5>
